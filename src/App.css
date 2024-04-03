@@ -2,7 +2,3 @@
   display: flex;
 }
 
-.sidebar {
-  position: fixed;
-  height: 100vh !important;
-}

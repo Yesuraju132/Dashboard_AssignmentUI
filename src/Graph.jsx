@@ -67,7 +67,7 @@ export default function Graph() {
  },[]);
 
   return (
-    <div className="card" style={{ position: "relative" ,width:'100%',height:'50%'}}>
+    <div className="card" style={{ position: "relative" ,width:'70%'}}>
         <p><b>Overview</b>
         
         <br/>
@@ -79,7 +79,7 @@ export default function Graph() {
                 options={days}
                 optionLabel="name"
                 placeholder="Quarterly"
-                className="w-full md:w-14rem"
+                className="w-full md:w-14rem m-3"
                 style={{ borderRadius: "5px", fontFamily: "sans-serif", fontSize: "3px",position: "absolute", top: '4px', right: '4px'}}
             />
   <Chart

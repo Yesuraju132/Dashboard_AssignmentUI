@@ -6,7 +6,7 @@
   text-align: center;
   
 }
-p,a{
+.sub-item{
   font-weight: bolder;
   font-style: italic;
   font-size: large;

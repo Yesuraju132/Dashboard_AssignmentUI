@@ -10,24 +10,24 @@ export default function Maincontent() {
       }}
     >
       <div className="item">
-        <p>Earning</p>
-        <a>$ 10,000</a>
-        <p>⬇️37.8% this moth</p>
+        <p className="sub-item">Earning</p>
+        <a className="sub-item">$ 10,000</a>
+        <p className="sub-item">⬇️37.8% this moth</p>
       </div>
       <div className="item">
-        <p>Orders</p>
-        <a>$2.4k</a>
-        <p>🔺2% this month</p>
+        <p className="sub-item">Orders</p>
+        <a className="sub-item">$2.4k</a>
+        <p className="sub-item">🔺2% this month</p>
       </div>
       <div className="item">
-        <p>Balance</p>
-        <a>$2.4k</a>
-        <p>⬇️2% this month</p>
+        <p className="sub-item">Balance</p>
+        <a className="sub-item">$2.4k</a>
+        <p className="sub-item">⬇️2% this month</p>
       </div>
       <div className="item">
-        <p>Total Sales</p>
-        <a>$89k</a>
-        <p>🔺11% this month</p>
+        <p className="sub-item">Total Sales</p>
+        <a className="sub-item">$89k</a>
+        <p className="sub-item">🔺11% this month</p>
       </div>
     </div>
   );

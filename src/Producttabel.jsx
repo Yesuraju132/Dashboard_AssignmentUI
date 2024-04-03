@@ -49,22 +49,29 @@ const Producttable = () => {
     ];
 
     return (
-        <div className="card" style={{ backgroundColor: "whitesmoke", width: '100%', minHeight: "50%", position: "relative" ,borderRadius:'5px'}}>
-            <b><p style={{ margin: "2px", padding: "0px", position: "absolute", top: '2px', left: '4px' }}>Product Sell</p></b>
-            <div className="search-container" >
-                <InputText type="text" placeholder="Search" className="pi pi-search" style={{height:"30px",width:'150px'}} />
-                <Dropdown
-                value={selecteddays}
-                onChange={(e) => setSelecteddays(e.value)}
-                options={days}
-                optionLabel="name"
-                placeholder="Last 30 days"
-                className="w-full md:w-14rem"
-                style={{ borderRadius: "5px", fontFamily: "sans-serif", fontSize: "3px",position: "absolute", top: '4px', right: '4px',height:"30px",width:'150px'}}
-            />
+        <div className="card" style={{ backgroundColor: "white", width: '100%', minHeight: "50%", position: "relative" ,borderRadius:'5px'}}>
+           
+            <div className="search-container d-flex m-3" >
+            <p className='col-7'>Product Sell</p>
+                <div className="col-3 d-flex justify-content-end">
+                <InputText type="text" placeholder="Search" style={{height:"30px",width:'150px'}} />
+                </div>
+                <div  className="col-2 d-flex justify-content-end">
+                <Dropdown 
+              
+              value={selecteddays}
+              onChange={(e) => setSelecteddays(e.value)}
+              options={days}
+              optionLabel="name"
+              placeholder="Last 30 days"
+             
+              style={{ borderRadius: "5px", fontFamily: "sans-serif", fontSize: "3px",height:"30px",width:'150px'}}
+          />
+                </div>
             </div>
            
-            <DataTable value={products} tableStyle={{ width: "100%", height: "50%" }}>
+           <div className='mt-3'>
+           <DataTable value={products} tableStyle={{ width: "100%", height: "50%" }}>
                 <Column
                     field="image"
                     header="Product"
@@ -79,6 +86,7 @@ const Producttable = () => {
                 <Column field="price" header="Price" />
                 <Column field="totalSales" header="Total Sales" />
             </DataTable>
+           </div>
         </div>
     );
 }
