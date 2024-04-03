@@ -1,23 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import Producttable from './Producttabel';
+import Sidebar from './Sidebar';
+import Maincontent from './Maincontent';
+import Graph from './Graph';
+import { InputText } from 'primereact/inputtext';
+import 'primereact/resources/themes/saga-blue/theme.css';
+import 'primereact/resources/primereact.min.css';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App dashboard-container" style={{backgroundColor:'#F5F6F8'}}>
+      <div className='sidebar' style={{ position: "fixed", top: 0, left: 0, height: "100vh", width: "250px", backgroundColor: "#050440", color: "white" }}>
+        <Sidebar/>
+      </div>
+      <div className='col-9 content' style={{ display: "grid", gridTemplateColumns: "1fr", gridGap: "20px", marginLeft: "280px", padding: "20px"}}>
+    <h3>Hello Sharukh🙌</h3>
+    <InputText type="text" placeholder="Search"  style={{ height:"30px", width:'150px', position:'absolute', top:'1.68em', right:'6em'}} />
+    <Maincontent/>
+    <Graph/>
+    <Producttable/>
+</div>
+
     </div>
   );
 }

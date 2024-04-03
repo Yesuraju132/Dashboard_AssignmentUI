@@ -1,0 +1,16 @@
+.item {
+  background-color: white;
+  height: 100px;
+  border-radius: 10px;
+  font-family: sans-serif;
+  text-align: center;
+  
+}
+p,a{
+  font-weight: bolder;
+  font-style: italic;
+  font-size: large;
+ 
+  text-shadow: 2rem;
+
+}
