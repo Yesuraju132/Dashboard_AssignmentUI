@@ -67,8 +67,8 @@ export default function Graph() {
  },[]);
 
   return (
-    <div className="card" style={{ position: "relative" ,width:'70%'}}>
-        <p><b>Overview</b>
+    <div className="card m-2" style={{ position: "relative" ,width:'70%'}}>
+        <p className="m-2 " style={{fontStyle:'oblique' , fontWeight:'lighter'}}>Overview
         
         <br/>
         Monthly Earnings
@@ -89,17 +89,7 @@ export default function Graph() {
     // Adjusted gridRow and gridColumn
   />
   {/* Overlay to prevent hover effect */}
-  <div
-    className="overlay"
-    style={{
-      position: "absolute",
-      top: 0,
-      left: 0,
-      width: "100%",
-      height: "100%",
-      pointerEvents: "none", // Ensure events pass through overlay
-    }}
-  ></div>
+  
 </div>
 
   );

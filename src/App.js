@@ -5,7 +5,7 @@ import Graph from './Graph';
 import { InputText } from 'primereact/inputtext';
 import 'primereact/resources/themes/saga-blue/theme.css';
 import 'primereact/resources/primereact.min.css';
-
+import graphbar from './Screenshot 2024-04-03 171020.png'
 
 function App() {
   return (
@@ -21,7 +21,23 @@ function App() {
    </div>
 </div>
     <Maincontent/>
+   <div className='d-flex'>
     <Graph/>
+    <div
+      className="p-4 rounded m-2"
+      style={{
+        display:'flex',
+        backgroundColor: 'white',
+        border: '1px solid #ccc',
+        width: '30%',
+        height: 'auto',
+        flexDirection:'column'
+      }}
+    >
+      <p style={{fontStyle:'oblique' , fontWeight:'lighter'}}>Customers that buy the products</p>
+      <img src={graphbar} alt='graph' style={{borderRadius:'50%',width:'100%',height:'100%'}}/>
+    </div>
+   </div>
     <Producttable/>
 </div>
 
